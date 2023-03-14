@@ -2,12 +2,12 @@ import numpy as np
 from math import *
 def f(x):
     return 2*(x**3)-9*x*x-7*x+11
-I_ANSWER=-44
-N=5
-a=1
+I_ANSWER=-44 #точный ответ
+N=5 # из условия
+a=1 #интервалы
 b=3
 h = (b-a)/N
-ACCURACY = 2
+ACCURACY = 2 #точность округления
 xi = [round(i,1) for i in np.arange(a,b+h,h)]
 Fxi = [round(f(x),ACCURACY) for x in xi]
 
